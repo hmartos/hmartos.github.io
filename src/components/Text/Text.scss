@@ -1,0 +1,172 @@
+@import 'theme/variables.scss';
+
+.text {
+    &.p {
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: $font-size * 1.25;
+        white-space: pre-line;
+    }
+
+    &.span {
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: $font-size * 1.25;
+        white-space: pre-line;
+    }
+
+    &.label {
+        font-family: $font-family;
+        font-size: $font-size;
+        line-height: $font-size * 1.25;
+        white-space: pre-line;
+    }
+
+    &.xxl {
+        font-family: $font-family;
+        font-size: $font-size * 4.768;
+        line-height: $font-size * 7.153;
+        white-space: pre-line;
+    }
+
+    &.xl {
+        font-family: $font-family;
+        font-size: $font-size * 3.815;
+        line-height: $font-size * 5.722;
+        white-space: pre-line;
+    }
+
+    &.small {
+        font-family: $font-family;
+        font-size: $font-size * 0.8;
+        line-height: $font-size * 1.2;
+        white-space: pre-line;
+    }
+
+    &.small-xs {
+        font-family: $font-family;
+        font-size: $font-size * 0.64;
+        line-height: $font-size * 0.959;
+        white-space: pre-line;
+    }
+
+    &.h1,
+    &.h2,
+    &.h3,
+    &.h4,
+    &.h5 {
+        margin-bottom: $spacer;
+        font-family: $font-family-titles;
+        line-height: 1.25;
+        white-space: pre-line;
+    }
+
+    &.h1 {
+        margin-bottom: $spacer * 1.5;
+        font-size: $font-size * 3.052;
+        line-height: $font-size * 3.25;
+    }
+    &.h2 {
+        margin-bottom: $spacer * 1.5;
+        font-size: $font-size * 2.441;
+        line-height: $font-size * 2.75;
+    }
+    &.h3 {
+        font-size: $font-size * 1.953;
+        line-height: $font-size * 2.25;
+    }
+    &.h4 {
+        font-size: $font-size * 1.5;
+        line-height: $font-size * 1.75;
+    }
+    &.h5 {
+        font-size: $font-size * 1.25;
+        line-height: $font-size * 1.5;
+    }
+
+    &.p,
+    &.span,
+    &.label {
+        $font-sizes: (
+            '8',
+            '10',
+            '12',
+            '14',
+            '16',
+            '18',
+            '20',
+            '24',
+            '30',
+            '36',
+            '40',
+            '48',
+            '60',
+            '120'
+        );
+        @for $i from 0 to length($font-sizes) {
+            $size: unquote(nth($font-sizes, $i + 1));
+            &.fs#{$size} {
+                font-size: #{$size}px;
+            }
+        }
+    }
+
+    // Colors
+    &.white {
+        color: $white;
+    }
+    &.black {
+        color: $black;
+    }
+    &.gray-light {
+        color: $gray-light;
+    }
+
+    // Weight
+    &.light {
+        font-weight: $font-weight-light;
+    }
+    &.regular {
+        font-weight: $font-weight-regular;
+    }
+    &.medium {
+        font-weight: $font-weight-medium;
+    }
+    &.bold {
+        font-weight: $font-weight-bold;
+    }
+    &.bolder {
+        font-weight: $font-weight-bolder;
+    }
+
+    // Align
+    &.left {
+        text-align: left;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.right {
+        text-align: right;
+    }
+
+    // Other styling
+    &.uppercase {
+        text-transform: uppercase;
+    }
+    &.italic {
+        font-style: italic;
+    }
+    &.underline {
+        text-decoration: underline;
+    }
+    &.capitalize {
+        text-transform: capitalize;
+    }
+
+    &.ellipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

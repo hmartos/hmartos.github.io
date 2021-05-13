@@ -1,0 +1,7 @@
+@import 'theme/variables.scss';
+
+.social-media {
+    &__icon + &__icon {
+        margin-left: $spacer;
+    }
+}

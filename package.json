@@ -1,0 +1,73 @@
+{
+  "name": "hmartos-landing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "next dev",
+    "build": "rm -rf out/ && rm -rf .next/ && next build && next export",
+    "build:start": "next start",
+    "build:info": "ANALYZE=true yarn build",
+    "test": "react-scripts test",
+    "test:ci": "react-scripts test --env=jsdom --watchAll=false",
+    "storybook": "start-storybook -s ./public,./ -p 6006",
+    "build-storybook": "build-storybook",
+    "prettier:check": "prettier --check './src/**/*.{js,jsx,ts,tsx,json,css,scss}'",
+    "prettier:format": "prettier --write './src/**/*.{js,jsx,ts,tsx,json,css,scss}'",
+    "validate": "npm-run-all test:ci prettier:check"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fullpage/react-fullpage": "^0.1.19",
+    "@webdeb/next-styles": "^1.1.1",
+    "babel-loader": "8.1.0",
+    "classnames": "^2.2.6",
+    "next": "^10.0.0",
+    "next-i18next": "^7.0.1",
+    "node-sass": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-responsive": "^8.1.1",
+    "react-scripts": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.7",
+    "@storybook/addon-actions": "^6.1.2",
+    "@storybook/addon-essentials": "^6.1.2",
+    "@storybook/addon-links": "^6.1.2",
+    "@storybook/node-logger": "^6.1.2",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.2",
+    "@storybook/theming": "^6.1.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@types/node": "^14.14.9",
+    "@types/react": "^17.0.0",
+    "axios-mock-adapter": "^1.19.0",
+    "chalk": "^4.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "husky": "^4.3.7",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.2.0",
+    "react-test-renderer": "^17.0.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2",
+    "webpack-bundle-analyzer": "^4.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run validate"
+    }
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-dates|swiper))"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    }
+  }
+}

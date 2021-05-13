@@ -1,0 +1,55 @@
+{
+    "intro": {
+        "title": "Hello, I'm Héctor",
+        "subtitle": "Senior Software Engineer",
+        "description": {
+            "1": "Problem Solver",
+            "2": "Team Player",
+            "3": "Quick & Curious Learner"
+        },
+        "scroll": "Scroll down to know more about me!"
+    },
+    "developer": {
+        "title": "Software Engineer",
+        "subtitle": "I have more than 7 years of experience developing and leading software projects. See my complete professional experience on <0>LinkedIn</0>.",
+        "skills": "Skills",
+        "skillList": {
+            "analytical": "Analytical Skills",
+            "teamManagement": "Team Management",
+            "communication": "Communication Skills",
+            "flexibility": "Flexibility",
+            "teamwork": "Teamwork",
+            "leadership": "Leadership"
+        }
+    },
+    "projects":{
+        "title": "Open-Source Enthusiast",
+        "subtitle": "As a believer in open source philosophy, I love contributing to the main software communities like <0>StackOverflow</0> or <1>GitHub</1>.",
+        "myProjects": "Featured side projects",
+        "projectList": {
+            "netflix-viewing-stats": {
+                "title": "Netflix Viewing Stats",
+                "description": "Know more about how you spend your time on Netflix"
+            },
+             "ngx-tableau": {
+                "title": "NGX Tableau",
+                "description": "Angular module to embed a Tableau visualization"
+            },
+             "angular-reservation": {
+                "title": "Angular Reservation",
+                "description": "AngularJS configurable module to set up an appointment"
+            }
+        } 
+    },
+    "cybersecurity": {
+        "title": "Cybersecurity Passionate",
+        "subtitle": "I'm passionate about Cybersecurity and Ethical Hacking. Discoverer of <0>CVE-2020-35717</0>. Currently studying for a Master in Cybersecurity.",
+        "stories": "Featured stories"
+    },
+    "contact": {
+        "title": "Contact",
+        "subtitle": "If you want to get in touch don’t hesitate to contact me.",
+        "email": "Send me an email",
+        "social": "Follow me on Social Media"
+    }
+}

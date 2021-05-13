@@ -1,0 +1,25 @@
+@import 'theme/variables.scss';
+
+.projects {
+    &__project {
+        &--image {
+            width: 48px;
+        }
+
+        &--imageContainer {
+            align-self: center;
+        }
+
+        &--container {
+            margin-left: $spacer;
+        }
+
+        &--text {
+            margin-bottom: $spacer/2 !important;
+        }
+    }
+
+    &__project + &__project {
+        margin-top: $spacer;
+    }
+}

@@ -1,0 +1,10 @@
+@import 'theme/variables.scss';
+
+.contact-section {
+    height: 100%;
+    margin: 0 $spacer * 2;
+
+    &__block {
+        text-align: center;
+    }
+}

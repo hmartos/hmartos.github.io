@@ -1,0 +1,23 @@
+@import 'theme/variables.scss';
+
+.skills {
+    width: 350px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: $sm) {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    &__skill {
+        border-radius: 8px;
+        background-color: $gray-light;
+        margin: $spacer/2;
+
+        &--text {
+            padding: $spacer/2;
+        }
+    }
+}

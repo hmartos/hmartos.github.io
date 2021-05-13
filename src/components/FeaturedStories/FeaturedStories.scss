@@ -1,0 +1,13 @@
+@import 'theme/variables.scss';
+
+.featured-stories {
+    margin-top: 0;
+
+    &__story {
+        color: $white;
+    }
+
+    &__story + &__story {
+        margin-top: $spacer;
+    }
+}

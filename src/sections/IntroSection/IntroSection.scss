@@ -1,0 +1,25 @@
+@import 'theme/variables.scss';
+
+.intro-section {
+    height: 100%;
+    margin: 0 $spacer * 2.5;
+
+    &__description {
+        text-align: center;
+        display: inline;
+
+        &--item {
+            display: inline;
+        }
+
+        &--item + &--item::before {
+            content: '·';
+            padding: 0 $spacer/2;
+        }
+    }
+
+    &__scroll {
+        margin-top: $spacer * 2;
+        text-align: center;
+    }
+}

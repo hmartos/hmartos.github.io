@@ -1,0 +1,12 @@
+@import 'theme/variables.scss';
+
+.cybersecurity-section {
+    height: 100%;
+    margin: 0 $spacer * 2;
+
+    &__description {
+        @media screen and (min-width: $md) {
+            width: 700px;
+        }
+    }
+}

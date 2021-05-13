@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "next dev",
-    "build": "rm -rf out/ && rm -rf .next/ && next build && next export",
+    "build": "rm -rf docs/ && rm -rf .next/ && next build && next export && mv out/ docs/",
     "build:start": "next start",
     "build:info": "ANALYZE=true yarn build",
     "test": "react-scripts test",

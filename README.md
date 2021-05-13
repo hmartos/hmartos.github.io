@@ -73,3 +73,4 @@ TODO
 - Tests
 - Storybook
 - npm run validate on pre push hook
+- Improve page speed insights

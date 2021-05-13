@@ -70,3 +70,6 @@ TODO
 - SEO h1 h2 h3 h4
 - Continuous integration
 - Add Hotjar
+- Tests
+- Storybook
+- npm run validate on pre push hook

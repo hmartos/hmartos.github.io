@@ -32,6 +32,8 @@ To create a production ready artifact you will need to setup a `.env.production.
 
 - Update CHANGELOG.md
 
+- Build and push changes to the release branch
+
 - Merge the release branch into the master branch
 
 - Create and push a new tag with the new version
